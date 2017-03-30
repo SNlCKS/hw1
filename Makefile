@@ -1,9 +1,9 @@
-all: hw1 
+all: mid3
 
-hw1: hw1.cpp fonts.h
-	g++ hw1.cpp libggfonts.a -Wall -Wextra -ohw1 -lX11 -lGL -lGLU -lm -lrt
+mid3: mid3.cpp
+	g++ mid3.cpp -Wall -omid3
+	g++ mid3.cpp -o mid3test
 
 clean:
-	rm -f hw1
-	rm -f *.o
-
+	rm -f mid3
+	rm -f mid3test
