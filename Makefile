@@ -1,9 +1,9 @@
-all: mid3
+all: waterfall
 
-mid3: mid3.cpp
-	g++ mid3.cpp -Wall -omid3
-	g++ mid3.cpp -o mid3test
+waterfall: waterfall.cpp fonts.h
+	g++ waterfall.cpp libggfonts.a -Wall -Wextra -owaterfall -lX11 -lGL -lGLU -lm -lrt
 
 clean:
-	rm -f mid3
-	rm -f mid3test
+	rm -f waterfall
+	rm -f *.o
+
