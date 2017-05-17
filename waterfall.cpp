@@ -465,6 +465,13 @@ void render(Game *game)
 	r.bot = 20;
 	r.left = 440;
 	ggprint16(&r, 0, 0x00ffffff, "POT O' GOLD");
+
+	r.bot = 10;
+	r.left = 20;
+	ggprint16(&r, 0, 0x00ffffff, "Press b above blocks for Bubbler");
+
+
+
 }
 
 
